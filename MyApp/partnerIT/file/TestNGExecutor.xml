@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+							<suite name='My Company2017_08_26' verbose='1'>
+
+							<test name='My Company2017_08_26'>
+							<classes>
+
+							<class name='com.ServiceMaster.SmartIT.LoginAndLogoutTest'>
+
+							<methods>
+
+							<include name='TC_SmartIT_LoginAndLogout'/>
+
+							</methods>
+
+							</class>
+
+							<class name='Class Name'>
+
+							<methods>
+
+							<include name='New Test'/>
+
+							</methods>
+
+							</class>
+
+							</classes>
+
+							</test>
+
+							</suite>

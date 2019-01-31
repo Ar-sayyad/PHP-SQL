@@ -1,0 +1,7 @@
+ExecutionName:SVMPIT2017_07_03
+EnvironmentName:Production
+EnvironmentUrl:Production
+BrowserName:Chrome
+FailureAttempt:2
+SelectedTestCases:Test2~Test2,Test1~Te1st,~,new~added,~,
+NoofSelectedTestCases:3

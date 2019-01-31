@@ -1,0 +1,84 @@
+Sr No,Login With,Page,Test Case,Status,Comment,FirstTestCycle
+1,Company User,Dashboard,Verify Dashboard is showing Correct values,Passed,,
+2,,,Verify Latest Exceution is showing proper values,Passed,,"I executed 6 testcases, But shows only 3"
+3,,Users,Add a user ,Passed,,
+4,,,Edit a user,Passed,,
+5,,,Delete a User,Passed,,
+6,,,No duplicate user should be added for company,Passed,,
+7,,,Add users with Administrator and Testers role,Passed,,
+8,,,Verify logged in user should not be displayed in users list,Passed,,
+9,,,Verify Sequence of User listed,Passed,,
+10,,,Verify Created date should be correct,Passed,,
+11,,,"Login with one of the administrator user and logout, 
+Login with company user and delete the administrator user and logout 
+Try to login with Administrator user again, it should not get loged in as it is alreasy deleted
+Try above steps for Tester user as well",Passed,,
+12,,Manage Application,Add Application ,Passed,,
+13,,,Edit application,Passed,,
+,,,Try to delete Application if has testcase executed under it,Passed,"Not allow to delete application if it has testcases excuted under it.
+2. If Application has testcases not executed then onclick of  delete should give confirmation message like ""Selected application has testcases, Do you still wants to Delete?""-->Confiramation msg is unique for all as MVC cant changed page by page.","1. Pass
+2. If application has testcases not executed then
+ show confirmation message but should allow to Delete on Click of Yes/Okay button."
+14,,,Delete Application,Passed,,
+15,,,Verify Duplicate application can not be added for Company,Passed,Not Allows duplicate application name.,Pass
+16,,,"Verify Application is shown in Upload Test Case, Execution Page, Download test case page",Passed,,
+17,,,Verify Created date on Application Page,Passed,,
+18,,Manage Browser,Add Browser,Passed,,
+19,,,Edit Browser,Passed,,
+20,,,Try to delete Browser if has testcase executed under it,Passed,"Not allow to delete Browser if it has testcases excuted under it.
+",Pass
+21,,,Delete Browser,Passed,,
+22,,,Verify Duplicate Browser can not be added for Company,Passed,NOT Allows duplicate browser name.,Pass
+23,,,Verify Browser is shown in Execution Page,Passed,,
+24,,Manage Environment,Verify Created date on Browser Page,Passed,,
+25,,,Add Environment,Passed,,
+26,,,Edit Environment,Passed,,
+27,,,Try to delete Environment if has testcase executed under it,Passed,"Not allow to delete Environment if it has testcases excuted under it.
+",Pass
+28,,,Delete Environment,Passed,,
+29,,,Verify Duplicate Environment can not be added for Company,Passed,not Allows duplicate Environment name.,Pass
+30,,Manage Test Cases ,"Verify Environment is shown in Execution Page, Update URL Page",Passed,,
+31,,,Verify Created date on Environment Page,Passed,,
+32,,,Add Test Case ,Passed,,
+33,,,Edit Test Case,Passed,,
+34,,,Try to delete Test Cases if  testcase is executed,Passed,"Not allow to delete Testcase if testcase is excuted.
+",Pass
+35,,,Delete Test Case,Passed,,
+,,,Verify Duplicate Test Case can not be added for Company,Passed,NOT Allows duplicate Testcase name and Class name.,Pass
+36,,,Verify Created date on Test Case Page,Passed,,
+37,,Application URL,"Verify If Test Case is mark for Test Data then this test case 
+should be shown in download/Upload Test Data page drop down",Passed,,
+38,,,"Verify If Test Case is not mark for Test Data then this test case 
+should not be shown in download/Upload Test Data page drop down",Passed,,
+39,,,"Verify test case is shown in Execution page under Application tree 
+Verify test case is shown under Test Case case down load on Execution page",Passed,,
+40,,,Add Application URL,Passed,,
+,,Upload Test Data,Delete Application URL,Passed,,
+41,,,Edit Application URL,Passed,,
+42,,,Verify update of URL must be happen on Execution Page once user select the environment,Passed,,
+43,,,Verify the Upload Test Data menu name,Passed,Menu name should be 'Upload Test Data',Pass
+44,,,Verify Download of test data happen when user select a test case,Passed,,
+45,,,Verify Path F:\TestIT\wamp\www\TestApps\SeleniumAutomation_V1\TestData\<Company>\<TestCaseName>\TestCase.xlx,Passed,,
+46,,Execution ,Verify upload of test data happen when user select a test case ,Passed,"1. Select the Application don't select testcase and upload the test data, should show alert message ""Please select atleast one testcase"".
+2. On click of upload test data, lets say for some reason application is failed to upload data then user should remain on Upload test data page instead of execution page.",1. Pass
+47,,,Verify Path F:\TestIT\wamp\www\TestApps\SeleniumAutomation_V1\TestData\<Company>\<TestCaseName>\TestCase.xlx this test case should get replace on upload,Passed,,
+48,,,Verify only Excel file is supported for data upload,Passed,,
+49,,,Verify all the records in drop down are created for same company,Passed,,
+50,,,"Don’t select any test case and click on Execute button, it should give some validation mesaage to select at least one test case",Passed,Execution button make a disabled till the any test case select.,pass
+51,,,"Down load test case should down load file in the form of excel or word document from perticular test case from path 
+F:\TestIT\wamp\www\TestApps\SeleniumAutomation_V1\TestCases\<Company>\<TestCaseName>\",Passed,Get Alert if file not found..!,"In directory no folder for MyIT application still 
+able to download testcase file"
+52,,,Check validation message for mandetory field on this page,Passed,,
+53,,Reports,"Once user clicks on Execute verify Configuration file, TestNG_Executor.xml file and TriggerExecution.bat file 
+is created at F:\SeleniumAutomation_V1\Companies\<Company>\<User>\<ExecutionName>\",Passed,,
+54,,,"Verify on Execute only login user should get mail from teamautoit+company@gmail.com
+If this email details are not present under profile tab of this user then mail should get from teamautoit+application@gmail.com",,,
+55,,,No Duplicate Execution name allowed per company,Passed,,
+56,,Profile,Verify Execution names are listed in dropdown in descending order,Passed,,
+57,,,Verify Execution names are listed in grid with proper details,Passed,,
+58,,,On View Report should be shown in proper format and Failed cases show screen shots ,Passed,,
+59,,,Verify user can edit his details,Passed,,
+,,,Changes password should work properly,Passed,,
+,,,Email Configuration should be proper,Passed,,
+,,,"Email : teamautoit+company@gmail.com 
+P@ssword1!",Passed,,

@@ -1,0 +1,11 @@
+ID	MONTH	YEAR	NearMiss	General	FirstAid_Injury	Fatal
+1	October   	2017      	5	8	2	0
+2	November  	2017      	14	1	1	0
+3	December  	2017      	7	2	1	0
+4	January   	2018      	7	3	0	0
+5	February  	2018      	12	0	0	0
+6	March     	2018      	9	3	0	0
+7	April     	2018      	10	1	3	0
+8	May       	2018      	7	1	2	0
+9	May       	2018      	7	1	2	1
+10	April     	2019      	7	1	4	0

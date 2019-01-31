@@ -1,0 +1,7 @@
+ExecutionName:SkyBI2017_06_29
+EnvironmentName:Testing Environment
+EnvironmentUrl:Testing Environment
+BrowserName:Mozilla Firefox
+FailureAttempt:1
+SelectedTestCases:
+NoofSelectedTestCases:0

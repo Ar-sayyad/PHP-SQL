@@ -1,0 +1,12 @@
+ExecutionName:My Company2017_08_26
+EnvironmentName:Production 
+EnvironmentUrl:Production 
+BrowserName:1
+FailureAttempt:1
+SmartIT=https://servicemaster-dev-smartit.onbmc.com 
+RemedyITSM=https://servicemaster-dev-smartit.onbmc.com 
+SelectedTestCases:TC_SmartIT_LoginAndLogout~com.ServiceMaster.SmartIT.LoginAndLogoutTest,New Test~Class Name,~,~,
+TRIGGEREDBY:demo123@gmail.com
+TRIGGEREDWHEN:26-08-2017 11:20:36
+COMPANY:My Company
+EMAIL:demo123@gmail.com

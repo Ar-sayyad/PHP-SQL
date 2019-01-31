@@ -1,0 +1,430 @@
+/* Template: Bono - Coming Soon Page Template
+   Author: InovatikThemes
+   Version: 1.0.0
+   Created: Nov 2017
+   Description: Master CSS file
+*/
+
+/****************************************
+    TABLE OF CONTENTS
+
+01. General Styles 
+02. Preloader
+03. Header
+04. Media Queries
+*****************************************/
+
+
+/******************************/
+/*     01. General Styles     */
+/******************************/
+body,
+html {
+    width: 100%;
+    height: 100%; 
+}
+
+body, p {
+	color: #fff;
+	font: 300 1rem/1.75rem "Open Sans", sans-serif;
+}
+
+h1 {
+	font: 700 2.5rem/3rem "Raleway", sans-serif;
+}
+
+h2 {
+	font: 700 2rem/2.25rem "Raleway", sans-serif;
+}
+
+h3 {
+	font: 700 1.75rem/2rem "Raleway", sans-serif;
+}
+
+a, a:hover {
+	color: #fff;
+}
+
+.form-control-input {
+	width: 100%;
+	height: 3rem; /* looks bad in IE if you use padding instead of height*/
+	padding-left: 1.5rem;
+    border: 1px solid #fff;
+	border-radius: 25px;	
+	background-color: #fff;
+	color: #3b454d;
+	font: 300 1rem/1.5rem "Open Sans", sans-serif;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-submit-button {
+	width: 100%;
+	height: 3rem;
+	border: 1px solid #b62474;
+	border-radius: 25px;
+	background-color: #b62474;
+	color: #fff;
+	font: 700 1rem/2rem "Open Sans", sans-serif;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.form-control-submit-button:hover {
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+}
+
+#msgSubmit.h3.text-center.text-error {
+	color: #35dcd4;
+	font: 300 1.25rem/1.75rem "Open Sans", sans-serif;
+}
+
+#msgSubmit.h3.text-center.text-confirmation {
+	color: #35dcd4;
+	font: 300 1.25rem/1.75rem "Open Sans", sans-serif;
+}
+
+/* FadeIn Animation From Animate.css Used For Morphtext */
+@-webkit-keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+}
+  
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 0.6s;
+	animation: fadeIn 0.6s;
+}
+/* end of fadein animation from animate.css used for morphtext */
+
+
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #8d3269;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.75rem 0 0 -2rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+
+/**********************/
+/*     03. Header     */
+/**********************/
+/* Particles.js Container */
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-image: url("../images/header-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+/* end of particles.js container */
+
+header {
+	position: relative;
+	overflow: auto;
+	height: 100vh;
+    text-align: center;
+}
+
+header .logo {
+	margin-top: 3rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1rem;
+	width: 130px;
+	height: 50px;
+}
+
+header .logo-text {
+	display: inline-block;
+	margin-top: 3.5rem;
+	margin-bottom: 1rem;
+	font: 700 3rem/2rem "Raleway", sans-serif;
+	text-decoration: none;
+}
+
+header .contact-details {
+	margin-right: 0.5rem;
+}
+
+header .contact-details .fa {
+	margin-right: 0.5rem;
+	margin-left: 0.75rem;
+}
+
+header .header-content {
+	padding-top: 3.5rem;
+	padding-bottom: 1rem;
+}
+
+header .countdown {
+	color: #fff;
+	font: 600 5rem/1.5rem "Open Sans", sans-serif;
+}
+
+header .countdown #clock .counter-number {
+	display: inline-block;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	margin-bottom: 2.75rem;
+}
+
+header .countdown #clock .separator {
+	margin-top: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	display: inline-block;
+	height: 2rem;
+	vertical-align: top;
+}
+
+header .countdown #clock .timer-text {
+	font: 300 0.75rem/0.75rem "Open Sans", sans-serif;
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 0.75rem;
+}
+
+header .p-under-header {
+	margin-bottom: 1.5rem;
+}
+
+/* Social Links */
+header .social-links-container {
+	position: relative;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+header .social-links-container .fa-stack {
+	margin-right: 0;
+}
+
+header .social-links-container .fa-stack.fa-lg {
+	font-size: 1.5rem;
+}
+
+header .social-links-container .fa-stack a .fa-stack-1x {
+	color: #b62474;
+	opacity: 0.8;
+	transition: opacity .3s ease;
+}
+
+header .social-links-container .fa-stack a .fa-stack-2x {
+	color: #fff;
+	opacity: 0.8;
+	transition: opacity .3s ease;
+}
+
+header .social-links-container .fa-stack a:hover .fa-stack-1x {
+	opacity: 1;
+}
+
+header .social-links-container .fa-stack a:hover .fa-stack-2x {
+    opacity: 1;
+}
+/* end of social links */
+
+
+/*****************************/
+/*     04. Media Queries     */
+/*****************************/	
+/* Min-width width 768px */
+@media (min-width: 768px)	{
+	h1 {
+		font: 700 2.75rem/3.5rem "Raleway", sans-serif;
+	}
+
+	header {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+
+	header .logo-and-details-wrapper {
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin-bottom: 0;
+	}
+
+	header .logo {
+		float: left;
+		margin-top: 1.75rem;
+		margin-left: 2rem;
+	}
+
+	header .logo-text {
+		float: left;
+		margin-top: 2.25rem;
+		margin-left: 2rem;
+	}
+
+	header .contact-details {
+		float: right;
+		margin-top: 2.5rem;
+		margin-right: 2rem;
+	}
+
+	header .header-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100vh;
+		margin-bottom: 0;
+	}
+
+	header .countdown {
+		font: 600 5.5rem/1.75rem "Open Sans", sans-serif;
+	}
+
+	header .countdown #clock .counter-number {
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+	}
+
+	header .countdown #clock .timer-text {
+		font: 300 1rem/1rem "Open Sans", sans-serif;
+	}
+
+	header .form-group {
+		display: inline-block;
+	}
+
+	header .form-control-input {
+		width: 16rem;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	header .form-control-submit-button {
+		padding-right: 1.9rem;
+		padding-left: 1.8rem;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	header .help-block.with-errors,
+	header .form-message {
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin-top: 0.25rem;
+	}
+
+	#msgSubmit.h3.text-center.text-error {
+		margin-top: 1rem;
+	}
+
+	#msgSubmit.h3.text-center.text-confirmation {
+		margin-top: 0;
+	}
+
+	header .social-links-container {
+		position: absolute;
+		right: 0;
+		bottom: 0rem;
+		left: 0;
+	}
+}
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	h1 {
+		font: 700 3.25rem/3.5rem "Raleway", sans-serif;
+	}
+
+	.p-under-header {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	header .header-content {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+}
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	
+}
